@@ -127,13 +127,16 @@ MethodScript-firmware/
 Icons/
 
 Therefore, move EL_MUX.exe to the Application/ directory and ensure those folders are present there. Afterward, the build/ and dist/ directories are safe to be deleted.
-
+---
 
 # License
 
 - Software (Application/) is licensed under MIT License.  
 - Hardware (Hardware/) is licensed under CC BY 4.0.  
+---
 
+# Acknowledgement
+---
 
 # References
 
