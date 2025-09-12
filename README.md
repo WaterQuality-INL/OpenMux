@@ -1,10 +1,11 @@
-This project was developed using **Python 3.8** for the software and **KiCad 7.0** for the hardware design.
-
+This project is an extension of the research conducted within the framework of the [OPTIRAS](https://www.optiras.org/) project at the International 
+Iberian Nanotechnology Laboratory [INL](https://inl.int/). The software component was implemented in Python 3.8, while the hardware design, including schematics and PCB layout, was developed using KiCad 7.0.
 ---
 
 # About
 
-This repository provides **OpenMux**, a homemade, cost-effective multiplexer adaptor for the EmStat4 potentiostat ([PalmSens](https://www.palmsens.com/product/emstat4m/)). The adaptor is integrated with the potentiostat using the **MethodScript** protocol provided by the manufacturer. This work is published at a peer review journal (add here doi)
+This repository provides **OpenMux**, a homemade, cost-effective multiplexer adaptor for the EmStat4 potentiostat ([PalmSens](https://www.palmsens.com/product/emstat4m/)). 
+The adaptor is integrated with the potentiostat using the **MethodScript** protocol provided by the manufacturer. This work is published at a peer review journal (add here doi)
 
 The system consists of two main modules:  
 
