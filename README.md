@@ -1,50 +1,67 @@
-This software was developed using **Python 3.8**.
-The hardware was designed using **Kicad 7.0**.
+This project was developed using **Python 3.8** for the software and **KiCad 7.0** for the hardware design.
 
+---
 
 # About
 
-This repository provides a cheap tool, the OpenMux, a homemade super cheap multiplexor adaptor for the EmStat4 potentiostat ([PalmSens](https://www.palmsens.com/product/emstat4m/)). The adptor was integrated with the potentiostat using MethodScript protocol provided by the manufacturer.
+This repository provides **OpenMux**, a homemade, cost-effective multiplexer adaptor for the EmStat4 potentiostat ([PalmSens](https://www.palmsens.com/product/emstat4m/)). The adaptor is integrated with the potentiostat using the **MethodScript** protocol provided by the manufacturer. This work is published at a peer review journal (add here doi)
 
-This tool is composed by two modules, the hardware module an Graphical interface to work with.
+The system consists of two main modules:  
 
-The schematic and gerber files can be found in Hardware folder of this repository.
-An Graphical User Interface was built in python to operate this adaptor module, present in Application folder
+1. **Hardware Module** – the multiplexer adaptor itself.  
+2. **Graphical User Interface (GUI)** – a Python-based interface to control the adaptor.  
 
+- Hardware schematics and Gerber files can be found in the `Hardware/` folder.  
+- The GUI is located in the `Application/` folder.  
 
-![Multiplexer Adaptor for EmStat4](MuxAdaptor.PNG)
-![GUI](GUI.PNG)
+![Multiplexer Adaptor for EmStat4](MuxAdaptor.PNG)  
+![Graphical User Interface](GUI.PNG)  
 
+---
 
 # Costs
 
-The costs for the elctrical components are arround 40€ :) :
-- 3x 10€ (ADG1408YRUZ, [Muxtiplexers](https://www.digikey.pt/en/products/detail/analog-devices-inc/ADG1408YRUZ/1206709?msockid=3b4fa386dcfd658b16a1b206dd9a641a)); 
-- 3x 1.60€ (Phoenix therminal block 8pos, [Therminals](https://www.digikey.pt/en/products/detail/phoenix-contact/1984675/950853)); 
-- 3x 0.14€ (Pin header 12pos, [Male Pin header](https://www.digikey.pt/en/products/detail/adam-tech/PH1-12-UA/9830395))
-- 3x 0.49€ (Pin header 12pos, [Female Pin header](https://www.digikey.pt/en/products/detail/w%C3%BCrth-elektronik/61301211821/16608531))
+The approximate cost of the electronic components (excluding the PCB) is around **€40**. Key components include:
+
+| Quantity | Component | Price | Link |
+|----------|-----------|-------|------|
+| 3x       | ADG1408YRUZ Multiplexer | €10 | [Digi-Key](https://www.digikey.pt/en/products/detail/analog-devices-inc/ADG1408YRUZ/1206709?msockid=3b4fa386dcfd658b16a1b206dd9a641a) |
+| 3x       | Phoenix Terminal Block 8-pos | €1.60 | [Digi-Key](https://www.digikey.pt/en/products/detail/phoenix-contact/1984675/950853) |
+| 3x       | Male Pin Header 12-pos | €0.14 | [Digi-Key](https://www.digikey.pt/en/products/detail/adam-tech/PH1-12-UA/9830395) |
+| 3x       | Female Pin Header 12-pos | €0.49 | [Digi-Key](https://www.digikey.pt/en/products/detail/w%C3%BCrth-elektronik/61301211821/16608531) |
+
+---
 
 
 
-# Get Started
+# Getting Started
 
-1º Download the repository
+1. **Download the repository**  
 
-2º Build the adaptor (OpenMux)
- - Send the gerber files for fabrication at any PCB manufacturer (JLCPCB, PCBway, ...)
- - Oder the components and assembel
+2. **Build the OpenMux adaptor**  
+   - Send the Gerber files for fabrication to any PCB manufacturer (e.g., JLCPCB, PCBWay).  
+   - Order the components and assemble the board.  
 
-3º Install the software to run the Graphical application (The Emstat alone can be used with this environment, play whit it while you to wait for the PCB's to arrive )
+3. **Install the software**  
+   - The OpenMux is not necessary to start using the GUI (whitout the multiplexing features). Just start it, connect the potentiostat to the computer and press play.
 
-4º Mount the OpenhMux adaptor onto the EmStat4
+4. **Mount the OpenMux adaptor** onto the EmStat4.  
 
-5º Launch the application and connect the modified device to the computer via USB
+5. **Launch the GUI** and connect the modified device to your computer via USB.
+
+---
 
 
 
 
 # Hardware
-The schematics and pcb design were developed using Kicad. The gerber files for production are located in Hardware/production/Mux_Module.zip, and were generated using Kicad fabrication toolkit plugin.
+
+The schematics and PCB design were developed using **KiCad**.  
+
+- Gerber files for production can be found in:  `Hardware/production/Mux_Module.zip`
+- These files were generated using the **KiCad Fabrication Toolkit** plugin.  
+
+---
 
 
 
@@ -103,3 +120,14 @@ MethodScript-firmware/
 Icons/
 
 Therefore, move EL_MUX.exe to the Application/ directory and ensure those folders are present there. Afterward, the build/ and dist/ directories are safe to be deleted.
+
+
+# License
+
+- Software (Application/) is licensed under MIT License.  
+- Hardware (Hardware/) is licensed under CC BY 4.0.  
+
+
+# References
+
+(Add our publication)
