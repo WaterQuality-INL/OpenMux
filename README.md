@@ -1,8 +1,23 @@
-# Init
-
 This software was developed using **Python 3.8**.
+The hardware was designed using **Kicad 7.0**.
 
----
+
+# About
+
+This repository provides the necessary resources to build a home amde multiplexor adaptor for the EmStat4 potentiostat (PalmSens, [text](https://www.palmsens.com/product/emstat4m/))
+
+The schematic and gerber files can be found in Hardware folder of this repository.
+An Graphical User Interface was built in python to operate this adaptor module, present in Application
+
+
+![Multiplexer Adaptor for EmStat4](MuxAdaptor.PNG)
+
+
+
+# Get Started
+
+
+
 
 # Running the Application
 
