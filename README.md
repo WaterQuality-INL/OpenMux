@@ -1,4 +1,5 @@
 This work is an extension of the research conducted within the framework of the [OPTIRAS](https://www.optiras.org/) project at [INL](https://inl.int/). The software component was implemented in Python 3.8, while the hardware design, including schematics and PCB layout, was developed using KiCad 7.0.
+
 ---
 
 # About
@@ -127,12 +128,14 @@ MethodScript-firmware/
 Icons/
 
 Therefore, move EL_MUX.exe to the Application/ directory and ensure those folders are present there. Afterward, the build/ and dist/ directories are safe to be deleted.
+
 ---
 
 # License
 
 - Software (Application/) is licensed under MIT License.  
-- Hardware (Hardware/) is licensed under CC BY 4.0.  
+- Hardware (Hardware/) is licensed under CC BY 4.0.
+
 ---
 
 # Acknowledgement
