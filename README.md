@@ -14,8 +14,15 @@ The system consists of two main modules:
 - Hardware schematics and Gerber files can be found in the `Hardware/` folder.  
 - The GUI is located in the `Application/` folder.  
 
-![Multiplexer Adaptor for EmStat4](MuxAdaptor.PNG)  
-![Graphical User Interface](GUI.PNG)  
+<div align="center">
+  <img src="MuxAdaptor.PNG" alt="Multiplexer Adaptor for EmStat4" width="400"/>
+  <p><em>Figure 1: OpenMux adaptor for EmStat4</em></p>
+</div>
+
+<div align="center">
+  <img src="GUI.PNG" alt="Graphical User Interface" width="400"/>
+  <p><em>Figure 2: OpenMux GUI</em></p>
+</div>
 
 ---
 
