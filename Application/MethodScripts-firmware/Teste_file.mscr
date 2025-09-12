@@ -1,0 +1,81 @@
+e
+#Enabling MethodSCRIPT mode
+var p
+var t
+#time to change channel
+var x
+store_var x 1000m ja
+#time channel interval
+var y
+store_var y 1000m ja
+#hold current channel
+var b
+#hold channel id
+var i
+#number of channels -1
+var n
+store_var n 2i ja
+#array index
+var a
+store_var a 0i ja
+#array user channel idx
+array u 3i
+array_set u 0i 0i
+array_set u 1i 5i
+array_set u 2i 7i
+#array channels map
+array c 8i
+array_set c 0i 0b0000i
+array_set c 1i 0b1000i
+array_set c 2i 0b0100i
+array_set c 3i 0b1100i
+array_set c 4i 0b0010i
+array_set c 5i 0b1010i
+array_set c 6i 0b0110i
+array_set c 7i 0b1110i
+#Setting GPIOD 0, 1 and 2 as output
+set_gpio_cfg 0b1111 1
+#Seting Initial channel
+array_get u a i
+array_get c i b
+set_gpio b
+#Initialize time at 0ms
+store_var t 0m ja
+set_pgstat_chan 0
+set_pgstat_mode 3
+#set_max_bandwidth 40
+#Setting applied potential (da) range (Since OCP then 0V)
+#set_range_minmax da 0 0
+#Setting measured potential range (ab)
+#set_range ab 600m
+set_autoranging ab 0 600m
+#Seting up current (ba) range configurations
+#set_range ba 1u
+set_autoranging ba 0 1u
+cell_off
+#Starting OCP measurement. The following line is expected M000B
+meas_loop_ocp p 500m 10000m
+    add_var t 500m
+	pck_start
+	pck_add p
+    pck_add t
+    pck_add a
+    pck_add i
+    pck_add b
+	pck_end
+	if t >= x
+	    if a >= n
+            store_var a 0i ja
+        else
+            add_var a 1i
+        endif
+        array_get u a i
+        array_get c i b
+        set_gpio b
+        add_var x y
+    endif
+endloop
+#At ending * is sent
+on_finished:
+cell_off
+

@@ -1,0 +1,64 @@
+e
+#Enabling MethodSCRIPT mode
+var p
+var h
+#hold current channel
+var b
+#hold channel id
+var i
+#number of channels -1
+var n
+store_var n IDCHANNELSi ja
+#array index
+var a
+store_var a 0i ja
+#array user channel idx
+array u NCHANNELSi
+ARRAY_USER_CHANNELS
+#array channels map
+array c 8i
+array_set c 0i 0b0000i
+array_set c 1i 0b1000i
+array_set c 2i 0b0100i
+array_set c 3i 0b1100i
+array_set c 4i 0b0010i
+array_set c 5i 0b1010i
+array_set c 6i 0b0110i
+array_set c 7i 0b1110i
+#Setting GPIOD 0, 1 and 2 as output
+set_gpio_cfg 0b1111 1
+#Configure pgstat
+set_pgstat_mode 2
+set_max_bandwidth 40
+set_range ba 100u
+set_autoranging ba 1n 100m
+set_e 0m
+cell_on
+loop a <= n
+    #Seting channel
+    array_get u a i
+    array_get c i b
+    set_gpio b
+    #autorange for 1s prior to CV and equilibration
+    meas_loop_ca p h VDCm 100m EQTIME
+        pck_start
+        pck_add p
+        pck_add h
+        pck_end
+    endloop
+    #E_res, I_res, E_begin, E_vtx1, E_vtx2, E_step, scan_rate
+    meas_loop_cv p h E_BEGINm E_V1m E_V2m E_STEPm SRm nscans(SCANS)
+        pck_start
+        pck_add p
+        pck_add h
+        pck_add a
+        pck_add i
+        pck_add b
+        pck_end
+    endloop
+    add_var a 1i
+endloop
+#At ending * is sent
+on_finished:
+cell_off
+
