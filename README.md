@@ -3,7 +3,7 @@ This work is an extension of the research conducted within the framework of the 
 
 # About
 
-This repository provides **OpenMux**, a homemade, cost-effective multiplexer adaptor for the EmStat4 potentiostat ([PalmSens](https://www.palmsens.com/product/emstat4m/)). 
+This repository provides **OpenMux**, a homemade, cost-effective multiplexer tool for the EmStat4 potentiostat ([PalmSens](https://www.palmsens.com/product/emstat4m/)). 
 The adaptor is integrated with the potentiostat using the **MethodScript** protocol provided by the manufacturer. This work is published at a peer review journal (add here doi)
 
 The system consists of two main modules:  
