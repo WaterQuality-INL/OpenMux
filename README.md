@@ -1,4 +1,4 @@
-This project is an extension of the research conducted within the framework of the [OPTIRAS](https://www.optiras.org/) project at the International 
+This work is an extension of the research conducted within the framework of the [OPTIRAS](https://www.optiras.org/) project at the International 
 Iberian Nanotechnology Laboratory [INL](https://inl.int/). The software component was implemented in Python 3.8, while the hardware design, including schematics and PCB layout, was developed using KiCad 7.0.
 ---
 
