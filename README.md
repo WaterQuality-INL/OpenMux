@@ -18,7 +18,7 @@ The system consists of two main modules:
 
 <div align="center">
   <img src="MuxAdaptor.PNG" alt="Multiplexer Adaptor for EmStat4" width="400"/>
-  <p><em>Figure 1: OpenMux adaptor for EmStat4</em></p>
+  <p><em>Figure 1: OpenMux adapter for EmStat4</em></p>
 </div>
 
 <div align="center">
