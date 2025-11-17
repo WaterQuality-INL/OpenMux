@@ -1,20 +1,19 @@
 # OpenMux Overview
-This work is an extension of the research conducted within the framework of the [OPTIRAS](https://www.optiras.org/) project at [INL](https://inl.int/). The software component was implemented in Python 3.8, while the hardware design, including schematics and PCB layout, was developed using KiCad 7.0.
+OpenMux is an extension of the research conducted within the framework of the [OPTIRAS project](https://www.optiras.org/), particularly from the [Water Quality Group](https://inl.int/espina-research-group/) at the [International Iberian Nanotechnology Laboratory](https://inl.int/).
+We aim to provide an open-source multiplexer adaptor for [EmStat4 LR/HR potentiostat](https://www.palmsens.com/product/emstat4m/) by combining hardware design with software integration. This innovation enhances experimental efficiency and scalability for researchers and engineers alike, paving the way for applications such as multiplexed electrochemical sensing, automated assay platforms, and integrated IoT-based field monitoring systems for environmental, biomedical, or industrial electrochemical analysis.
 
 ---
 
 # About
 
-This repository provides **OpenMux**, a homemade, cost-effective multiplexer tool for the EmStat4 potentiostat ([PalmSens](https://www.palmsens.com/product/emstat4m/)). 
-The adaptor is integrated with the potentiostat using the [**MethodScript**](https://github.com/PalmSens) protocol provided by the manufacturer. This work is published at a peer review journal (add here doi)
+This repository provides **OpenMux**, a homemade and cost-effective multiplexer adapter for the EmStat4 OEM module from Palmsens. 
+The adaptor is integrated with the potentiostat using the [**MethodScript**]([https://github.com/PalmSens](https://www.palmsens.com/methodscript/)) protocol provided by the manufacturer.
 
 The system consists of two main modules:  
 
-1. **Hardware Module** – the multiplexer adaptor itself.  
-2. **Graphical User Interface (GUI)** – a Python-based interface to control the adaptor.  
+1. **Hardware Module** – the multiplexer adapter itself (figure 1), whose schematics and PCB layout were developed using KiCad 7.0. Hardware schematics and Gerber files can be found in the `Hardware/` folder.  
+2. **Graphical User Interface (GUI)** – a graphical user interface (figure 2) to control the adaptor, implemented in Python 3.8. The GUI is located in the `Application/`  folder.
 
-- Hardware schematics and Gerber files can be found in the `Hardware/` folder.  
-- The GUI is located in the `Application/` folder.  
 
 <div align="center">
   <img src="MuxAdaptor.PNG" alt="Multiplexer Adaptor for EmStat4" width="400"/>
@@ -25,6 +24,10 @@ The system consists of two main modules:
   <img src="GUI.PNG" alt="Graphical User Interface" width="400"/>
   <p><em>Figure 2: OpenMux GUI</em></p>
 </div>
+
+
+The application of OpenMux for electrochemical methods is described in the scientific literature [1].
+
 
 ---
 
@@ -128,7 +131,7 @@ MethodScript-firmware/
 
 Icons/
 
-Therefore, move EL_MUX.exe to the Application/ directory and ensure those folders are present there. Afterward, the build/ and dist/ directories are safe to be deleted.
+Therefore, move EL_MUX.exe to the Application/ directory and ensure those folders are present there. Afterwards, the build/ and dist/ directories are safe to be deleted.
 
 ---
 
@@ -139,9 +142,23 @@ Therefore, move EL_MUX.exe to the Application/ directory and ensure those folder
 
 ---
 
+# Contributors
+•	Samuel Silva1
+Supervision:
+•	Álvaro Geraldes2
+Contacts:
+•	Samuel Silva, samuel.silva@inl.int
+•	Álvaro Geraldes, alvaro.geraldes@inl.int
+1 Water Quality Group, 2 Systems Engineering Group, International Iberian Nanotechnology Laboratory (INL)
+
+---
+
 # Acknowledgement
+To PalmSens for MethodScript
+To OPTIRAS project
+
 ---
 
 # References
 
-(Add our publication)
+Olesia Dudik, Renato L. Gil, Raquel B. Queirós. Critical assessment of different ion-to-electron transducers in modified screen-printed electrodes for potentiometric lithium sensing. Microchemical Journal 2025, 215, 114195, https://doi.org/10.1016/j.microc.2025.114195
