@@ -161,4 +161,4 @@ To OPTIRAS project
 
 # References
 
-Olesia Dudik, Renato L. Gil, Raquel B. Queirós. Critical assessment of different ion-to-electron transducers in modified screen-printed electrodes for potentiometric lithium sensing. Microchemical Journal 2025, 215, 114195, https://doi.org/10.1016/j.microc.2025.114195
+[1] Olesia Dudik, Renato L. Gil, Raquel B. Queirós. Critical assessment of different ion-to-electron transducers in modified screen-printed electrodes for potentiometric lithium sensing. Microchemical Journal 2025, 215, 114195, https://doi.org/10.1016/j.microc.2025.114195
