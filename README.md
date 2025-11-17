@@ -107,6 +107,8 @@ The schematics and PCB design were developed using **KiCad**.
 
 # Building an Executable
 
+Alternatively, an executable file can also be created, allowing this application to run in computers where python is not installed.
+
 1. Activate the Python environment:
 ```bash
 ...\Application> venv\Scripts\activate.bat
@@ -134,6 +136,15 @@ Icons/
 Therefore, move EL_MUX.exe to the Application/ directory and ensure those folders are present there. Afterwards, the build/ and dist/ directories are safe to be deleted.
 
 ---
+
+# Troubleshooting
+
+- If the GUI cannot find the EmStat4 device, verify the USB/serial connection and port name.
+- Ensure the virtual environment is activated and dependencies installed.
+- For packaging issues, build the executable on the target OS (pyinstaller builds are OS-specific).
+
+---
+
 
 # License
 
