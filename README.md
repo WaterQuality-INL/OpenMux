@@ -143,13 +143,16 @@ Therefore, move EL_MUX.exe to the Application/ directory and ensure those folder
 ---
 
 # Contributors
-•	Samuel Silva1
+- Samuel Silva*
+
 Supervision:
-•	Álvaro Geraldes2
+- Álvaro Geraldes**
+
 Contacts:
-•	Samuel Silva, samuel.silva@inl.int
-•	Álvaro Geraldes, alvaro.geraldes@inl.int
-1 Water Quality Group, 2 Systems Engineering Group, International Iberian Nanotechnology Laboratory (INL)
+- Samuel Silva, samuel.silva@inl.int
+- Álvaro Geraldes, alvaro.geraldes@inl.int
+  
+* Water Quality Group, ** Systems Engineering Group, International Iberian Nanotechnology Laboratory (INL)
 
 ---
 
