@@ -8,7 +8,7 @@ We aim to provide an open-source multiplexer adaptor for [EmStat4 LR/HR potentio
 ## About
 
 This repository provides **OpenMux**, a homemade and cost-effective multiplexer adapter for the EmStat4 OEM module from Palmsens. 
-The adaptor is integrated with the potentiostat using the [**MethodScript**]([https://github.com/PalmSens](https://www.palmsens.com/methodscript/)) protocol provided by the manufacturer.
+The adapter is integrated with the potentiostat using the [**MethodScript**]([https://github.com/PalmSens](https://www.palmsens.com/methodscript/)) protocol provided by the manufacturer.
 
 The system consists of two main modules:  
 
@@ -51,8 +51,6 @@ The approximate cost of the electronic components (excluding the PCB) is around 
 
 ---
 
-
-
 ## Getting Started
 
 1) Clone or download the repository 
@@ -91,8 +89,6 @@ pip install -r requirements.txt
 python3 EL_MUX.py
 ```
 
----
-
 5) OPTIONAL: Packaging (creating an executable)
 
 Alternatively, an executable file can also be created, allowing this application to run in computers where python is not installed.
@@ -105,13 +101,6 @@ pyinstaller -w -p "venv\Lib\site-packages" -i Icons/group-30_116053.ico --onefil
 Notes:
 - The produced executable still depends on the folders `MethodScript-firmware/` and `Icons/`. Place `EL_MUX.exe` into `Application/` alongside those folders before running.
 - After verifying the executable works, you can remove the `build/` and `dist/` directories.
-
----
-
-## MethodScript & EmStat4
-
-The GUI uses the MethodScript protocol supported by the EmStat4 module. For details, see the manufacturer’s documentation:
-- Palmsens MethodScript: https://www.palmsens.com/methodscript/
 
 ---
 
