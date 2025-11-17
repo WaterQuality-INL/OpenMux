@@ -6,12 +6,12 @@ We aim to provide an open-source multiplexer adaptor for [EmStat4 LR/HR potentio
 
 # About
 
-This repository provides **OpenMux**, a homemade and cost-effective multiplexer adapter for the EmStat4 OEM module from Palmsens. 
+This repository provides **OpenMux**, a homemade and cost-effective multiplexer adaptor for the EmStat4 OEM module from Palmsens. 
 The adaptor is integrated with the potentiostat using the [**MethodScript**]([https://github.com/PalmSens](https://www.palmsens.com/methodscript/)) protocol provided by the manufacturer.
 
 The system consists of two main modules:  
 
-1. **Hardware Module** – the multiplexer adapter itself (figure 1), whose schematics and PCB layout were developed using KiCad 7.0. Hardware schematics and Gerber files can be found in the `Hardware/` folder.  
+1. **Hardware Module** – the multiplexer adaptor itself (figure 1), whose schematics and PCB layout were developed using KiCad 7.0. Hardware schematics and Gerber files can be found in the `Hardware/` folder.  
 2. **Graphical User Interface (GUI)** – a graphical user interface (figure 2) to control the adaptor, implemented in Python 3.8. The GUI is located in the `Application/`  folder.
 
 
