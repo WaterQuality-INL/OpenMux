@@ -1,12 +1,13 @@
+
 # OpenMux Overview
 OpenMux is an extension of the research conducted within the framework of the [OPTIRAS project](https://www.optiras.org/), particularly from the [Water Quality Group](https://inl.int/espina-research-group/) at the [International Iberian Nanotechnology Laboratory](https://inl.int/).
 We aim to provide an open-source multiplexer adaptor for [EmStat4 LR/HR potentiostat](https://www.palmsens.com/product/emstat4m/) by combining hardware design with software integration. This innovation enhances experimental efficiency and scalability for researchers and engineers alike, paving the way for applications such as multiplexed electrochemical sensing, automated assay platforms, and integrated IoT-based field monitoring systems for environmental, biomedical, or industrial electrochemical analysis.
 
 ---
 
-# About
+## About
 
-This repository provides **OpenMux**, a homemade and cost-effective multiplexer adaptor for the EmStat4 OEM module from Palmsens. 
+This repository provides **OpenMux**, a homemade and cost-effective multiplexer adapter for the EmStat4 OEM module from Palmsens. 
 The adaptor is integrated with the potentiostat using the [**MethodScript**]([https://github.com/PalmSens](https://www.palmsens.com/methodscript/)) protocol provided by the manufacturer.
 
 The system consists of two main modules:  
@@ -29,9 +30,15 @@ The system consists of two main modules:
 The application of OpenMux for electrochemical methods is described in the scientific literature [1].
 
 
+## Who is this for?
+
+- Electrochemists who want a cheap and modular, open platform for integrating sensors and data backends for:
+   - Environmental or industrial monitoring applications
+   - Scaling up sensor optimisation and/or preparation in the lab
+  
 ---
 
-# Costs
+## Costs
 
 The approximate cost of the electronic components (excluding the PCB) is around **€40**. Key components include:
 
@@ -46,98 +53,69 @@ The approximate cost of the electronic components (excluding the PCB) is around 
 
 
 
-# Getting Started
+## Getting Started
 
-1. **Download the repository**  
+1) Clone or download the repository 
+```bash
+git clone https://github.com/WaterQuality-INL/OpenMux.git
+cd OpenMux
+```
 
-2. **Build the OpenMux adaptor**  
-   - Send the Gerber files for fabrication to any PCB manufacturer (e.g., JLCPCB, PCBWay).  
-   - Order the components and assemble the board.  
+2) Hardware and production
+- Gerber files for production: `Hardware/production/Mux_Module.zip`
+- Schematics and PCB: in `Hardware/` (KiCad 7.x)
+- Fabricate the PCB (JLCPCB, PCBWay, etc.), order components, and assemble.
 
-3. **Install the software**  
-   - The OpenMux is not necessary to start using the GUI (whitout the multiplexing features). Just start it, connect the potentiostat to the computer and press play.
+3) Software requirements
+- Python 3.8 or newer (3.8–3.11 recommended)
+- OS: Windows, Linux, or macOS (GUI tested on Windows; Linux/macOS supported)
+- The Application uses `MethodScript-firmware/` and `Icons/` folders; these must be present when running the packaged executable (see Packaging below).
 
-4. **Mount the OpenMux adaptor** onto the EmStat4.  
+4) Run the GUI (development)
 
-5. **Launch the GUI** and connect the modified device to your computer via USB.
+Windows (cmd / PowerShell)
+```bash
+cd Application
+python -m venv venv
+venv\Scripts\activate.bat    # PowerShell: venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python EL_MUX.py
+```
+
+Linux / macOS
+```bash
+cd Application
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python3 EL_MUX.py
+```
 
 ---
 
-
-
-
-# Hardware
-
-The schematics and PCB design were developed using **KiCad**.  
-
-- Gerber files for production can be found in:  `Hardware/production/Mux_Module.zip`
-- These files were generated using the **KiCad Fabrication Toolkit** plugin.  
-
----
-
-
-
-# Running the Application
-
-1. Create a Python virtual environment inside the `Application` directory:
-
-```bash
-...\OpenMux> cd Application
-...\Application> python -m venv venv
-```
-
-2. Initialize the virtual environment:
-
-```bash
-...\Application> venv\Scripts\activate.bat
-```
-
-3. Install the dependencies:
-
-```bash
-(venv) ...\Application> pip install -r requirements.txt
-```
-
-4. Start the application:
-
-```bash
-(venv) ...\Application> python EL_MUX.py
-```
-
-
-# Building an Executable
+5) OPTIONAL: Packaging (creating an executable)
 
 Alternatively, an executable file can also be created, allowing this application to run in computers where python is not installed.
-
-1. Activate the Python environment:
 ```bash
-...\Application> venv\Scripts\activate.bat
+cd Application
+venv\Scripts\activate.bat
+pyinstaller -w -p "venv\Lib\site-packages" -i Icons/group-30_116053.ico --onefile EL_MUX.py
 ```
 
-2. Run the pyinstaller command:
-
-```bash
-(venv) ...\Application> pyinstaller -w -p "venv\Lib\site-packages" -i Icons\group-30_116053.ico --onefile EL_MUX.py
-```
-
-This will generate:
-
-A .spec file
-
-Two additional directories: build/ and dist/
-
-The dist/ directory contains the EL_MUX.exe (executable).
-⚠️ Note: This executable still depends on the following folders:
-
-MethodScript-firmware/
-
-Icons/
-
-Therefore, move EL_MUX.exe to the Application/ directory and ensure those folders are present there. Afterwards, the build/ and dist/ directories are safe to be deleted.
+Notes:
+- The produced executable still depends on the folders `MethodScript-firmware/` and `Icons/`. Place `EL_MUX.exe` into `Application/` alongside those folders before running.
+- After verifying the executable works, you can remove the `build/` and `dist/` directories.
 
 ---
 
-# Troubleshooting
+## MethodScript & EmStat4
+
+The GUI uses the MethodScript protocol supported by the EmStat4 module. For details, see the manufacturer’s documentation:
+- Palmsens MethodScript: https://www.palmsens.com/methodscript/
+
+---
+
+## Troubleshooting
 
 - If the GUI cannot find the EmStat4 device, verify the USB/serial connection and port name.
 - Ensure the virtual environment is activated and dependencies installed.
@@ -146,14 +124,14 @@ Therefore, move EL_MUX.exe to the Application/ directory and ensure those folder
 ---
 
 
-# License
+## License
 
 - Software (Application/) is licensed under MIT License.  
 - Hardware (Hardware/) is licensed under CC BY 4.0.
 
 ---
 
-# Contributors
+## Contributors
 - Samuel Silva*
 
 Supervision:
@@ -162,17 +140,19 @@ Supervision:
 Contacts:
 - Samuel Silva, samuel.silva@inl.int
 - Álvaro Geraldes, alvaro.geraldes@inl.int
-  
-* Water Quality Group, ** Systems Engineering Group, International Iberian Nanotechnology Laboratory (INL)
+
+*Water Quality Group, **Systems Engineering Group, International Iberian Nanotechnology Laboratory (INL)
 
 ---
 
-# Acknowledgement
+## Acknowledgement
 To PalmSens for MethodScript
-To OPTIRAS project
+
+This work is an extension of the research funded by EEA (European Economic Area) Grants Portugal through the funded project PT-INN-0076—OPTIRAS.
+ 
 
 ---
 
-# References
+## References
 
 [1] Olesia Dudik, Renato L. Gil, Raquel B. Queirós. Critical assessment of different ion-to-electron transducers in modified screen-printed electrodes for potentiometric lithium sensing. Microchemical Journal 2025, 215, 114195, https://doi.org/10.1016/j.microc.2025.114195
