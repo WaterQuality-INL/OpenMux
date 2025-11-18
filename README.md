@@ -12,7 +12,7 @@ The adapter is integrated with the potentiostat using the [**MethodScript**]([ht
 
 The system consists of two main modules:  
 
-1. **Hardware Module** – the multiplexer adaptor itself (figure 1), whose schematics and PCB layout were developed using KiCad 7.0. Schematic, layout, and Gerber files can be found in the `Hardware/` folder (see [schematic.pdf](`Hardware/schematic.pdf`) and [layout.pdf](`Hardware/layout.pdf`) for pictures).  
+1. **Hardware Module** – the multiplexer adaptor itself (figure 1), whose schematics and PCB layout were developed using KiCad 7.0. Schematic, layout, and Gerber files can be found in the `Hardware/` folder (see [schematic.pdf](Hardware/schematic.pdf) and [layout.pdf](Hardware/layout.pdf) for pictures).  
 2. **Graphical User Interface (GUI)** – a graphical user interface (figure 2) to control the adaptor, implemented in Python 3.8. The GUI is located in the `Application/`  folder.
 
 
