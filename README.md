@@ -4,7 +4,7 @@ This project was developed using **Python 3.8** for the software and **KiCad 7.0
 
 # About
 
-This repository provides **OpenMux**, a homemade, cost-effective multiplexer adaptor for the EmStat4 potentiostat ([PalmSens](https://www.palmsens.com/product/emstat4m/)). The adaptor is integrated with the potentiostat using the **MethodScript** protocol provided by the manufacturer. This work is published at a peer review journal (add here doi)
+This repository provides **OpenMux**, a homemade, cheap (~50€) multiplexer adaptor for the EmStat4 potentiostat ([PalmSens](https://www.palmsens.com/product/emstat4m/)). The adaptor is integrated with the potentiostat using the **MethodScript** protocol provided by the manufacturer. This work is published at a peer review journal (add here doi)
 
 The system consists of two main modules:  
 
@@ -43,11 +43,11 @@ The approximate cost of the electronic components (excluding the PCB) is around 
    - Order the components and assemble the board.  
 
 3. **Install the software**  
-   - The OpenMux is not necessary to start using the GUI (whitout the multiplexing features). Just start it, connect the potentiostat to the computer and press play.
+   - The OpenMux adaptor is not necessary to start using the GUI. Just start it, connect the potentiostat to the computer and press play (but the multiplexing features are not available in the meantime).
 
 4. **Mount the OpenMux adaptor** onto the EmStat4.  
 
-5. **Launch the GUI** and connect the modified device to your computer via USB.
+5. **Launch the OpenMx GUI** and connect the modified device to your computer via USB.
 
 ---
 
