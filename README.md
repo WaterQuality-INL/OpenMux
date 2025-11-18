@@ -137,7 +137,7 @@ Contacts:
 ## Acknowledgement
 To PalmSens for MethodScript
 
-This work is an extension of the research funded by EEA (European Economic Area) Grants Portugal through the funded project PT-INN-0076—OPTIRAS.
+This work is an extension of the research project funded by EEA (European Economic Area) Grants Portugal through the funded project PT-INN-0076—OPTIRAS.
  
 
 ---
