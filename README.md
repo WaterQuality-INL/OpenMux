@@ -1,10 +1,12 @@
-This project was developed using **Python 3.8** for the software and **KiCad 7.0** for the hardware design.
+# OpenMux Overview
+This work is an extension of the research conducted within the framework of the [OPTIRAS](https://www.optiras.org/) project at [INL](https://inl.int/). The software component was implemented in Python 3.8, while the hardware design, including schematics and PCB layout, was developed using KiCad 7.0.
 
 ---
 
 # About
 
-This repository provides **OpenMux**, a homemade, cheap (~50€) multiplexer adaptor for the EmStat4 potentiostat ([PalmSens](https://www.palmsens.com/product/emstat4m/)). The adaptor is integrated with the potentiostat using the **MethodScript** protocol provided by the manufacturer. This work is published at a peer review journal (add here doi)
+This repository provides **OpenMux**, a homemade, cost-effective multiplexer tool for the EmStat4 potentiostat ([PalmSens](https://www.palmsens.com/product/emstat4m/)). 
+The adaptor is integrated with the potentiostat using the [**MethodScript**](https://github.com/PalmSens) protocol provided by the manufacturer. This work is published at a peer review journal (add here doi)
 
 The system consists of two main modules:  
 
@@ -14,8 +16,15 @@ The system consists of two main modules:
 - Hardware schematics and Gerber files can be found in the `Hardware/` folder.  
 - The GUI is located in the `Application/` folder.  
 
-![Multiplexer Adaptor for EmStat4](MuxAdaptor.PNG)  
-![Graphical User Interface](GUI.PNG)  
+<div align="center">
+  <img src="MuxAdaptor.PNG" alt="Multiplexer Adaptor for EmStat4" width="400"/>
+  <p><em>Figure 1: OpenMux adaptor for EmStat4</em></p>
+</div>
+
+<div align="center">
+  <img src="GUI.PNG" alt="Graphical User Interface" width="400"/>
+  <p><em>Figure 2: OpenMux GUI</em></p>
+</div>
 
 ---
 
@@ -121,12 +130,17 @@ Icons/
 
 Therefore, move EL_MUX.exe to the Application/ directory and ensure those folders are present there. Afterward, the build/ and dist/ directories are safe to be deleted.
 
+---
 
 # License
 
 - Software (Application/) is licensed under MIT License.  
-- Hardware (Hardware/) is licensed under CC BY 4.0.  
+- Hardware (Hardware/) is licensed under CC BY 4.0.
 
+---
+
+# Acknowledgement
+---
 
 # References
 
