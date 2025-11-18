@@ -1,24 +1,24 @@
 
 # OpenMux Overview
 OpenMux is an extension of the research conducted within the framework of the [OPTIRAS project](https://www.optiras.org/), particularly from the [Water Quality Group](https://inl.int/espina-research-group/) at the [International Iberian Nanotechnology Laboratory](https://inl.int/).
-We aim to provide an open-source multiplexer adaptor for [EmStat4 LR/HR potentiostat](https://www.palmsens.com/product/emstat4m/) by combining hardware design with software integration. This innovation enhances experimental efficiency and scalability for researchers and engineers at an exceptionally low cost, paving the way for applications such as multiplexed electrochemical sensing, automated assay platforms, and integrated IoT-based field monitoring systems for environmental, biomedical, or industrial electrochemical analysis.
+We aim to provide an open-source multiplexer adaptor for the [EmStat4 LR/HR potentiostat](https://www.palmsens.com/product/emstat4m/) by combining hardware design with software integration. This innovation enhances experimental efficiency and scalability for researchers and engineers at an exceptionally low cost, paving the way for applications such as multiplexed electrochemical sensing, automated assay platforms, and integrated IoT-based field monitoring systems for environmental, biomedical, or industrial electrochemical analysis.
 
 ---
 
 ## About
 
-This repository provides **OpenMux**, a homemade and cost-effective multiplexer adapter for the EmStat4 OEM module from Palmsens. 
-The adapter is integrated with the potentiostat using the [**MethodScript**]([https://github.com/PalmSens](https://www.palmsens.com/methodscript/)) protocol provided by the manufacturer.
+This repository provides **OpenMux**, a homemade and cost-effective multiplexer adaptor for the EmStat4 OEM module from Palmsens. 
+The adaptor is integrated with the potentiostat using the [**MethodScript**]([https://github.com/PalmSens](https://www.palmsens.com/methodscript/)) protocol provided by the manufacturer.
 
 The system consists of two main modules:  
 
-1. **Hardware Module** – the multiplexer adaptor itself (figure 1), whose schematics and PCB layout were developed using KiCad 7.0. Schematic, layout, and Gerber files can be found in the `Hardware/` folder (see [schematic.pdf](Hardware/schematic.pdf) and [layout.pdf](Hardware/layout.pdf) for pictures).  
+1. **Hardware Module** – the multiplexer adaptor (figure 1), whose schematics and PCB layout were developed using KiCad 7.0. Schematic, layout, and Gerber files can be found in the `Hardware/` folder (see [schematic.pdf](Hardware/schematic.pdf) and [layout.pdf](Hardware/layout.pdf) for pictures).  
 2. **Graphical User Interface (GUI)** – a graphical user interface (figure 2) to control the adaptor, implemented in Python 3.8. The GUI is located in the `Application/`  folder.
 
 
 <div align="center">
   <img src="MuxAdaptor.PNG" alt="Multiplexer Adaptor for EmStat4" width="400"/>
-  <p><em>Figure 1: OpenMux adapter for EmStat4</em></p>
+  <p><em>Figure 1: OpenMux adaptor for EmStat4</em></p>
 </div>
 
 <div align="center">
@@ -115,7 +115,7 @@ Notes:
 
 ## License
 
-- Software (Application/) is licensed under MIT License.  
+- Software (Application/) is licensed under the MIT License.  
 - Hardware (Hardware/) is licensed under CC BY 4.0.
 
 ---
