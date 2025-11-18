@@ -116,7 +116,7 @@ Notes:
 ## License
 
 - Software (Application/) is licensed under the MIT License.  
-- Hardware (Hardware/) is licensed under CC BY 4.0.
+- <p> Hardware (Hardware/) is licensed under <a href=https://creativecommons.org/licenses/by/4.0/> CC BY 4.0 </a>   <img alt="Creative Commons Attribution 4.0" src="https://licensebuttons.net/l/by/4.0/88x31.png" style="border-style: none;"> </p>
 
 ---
 
