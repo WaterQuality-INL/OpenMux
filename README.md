@@ -1,7 +1,7 @@
 
 # OpenMux Overview
 OpenMux is an extension of the research conducted within the framework of the [OPTIRAS project](https://www.optiras.org/), particularly from the [Water Quality Group](https://inl.int/espina-research-group/) at the [International Iberian Nanotechnology Laboratory](https://inl.int/).
-We aim to provide an open-source multiplexer adaptor for [EmStat4 LR/HR potentiostat](https://www.palmsens.com/product/emstat4m/) by combining hardware design with software integration. This innovation enhances experimental efficiency and scalability for researchers and engineers alike, paving the way for applications such as multiplexed electrochemical sensing, automated assay platforms, and integrated IoT-based field monitoring systems for environmental, biomedical, or industrial electrochemical analysis.
+We aim to provide an open-source multiplexer adaptor for [EmStat4 LR/HR potentiostat](https://www.palmsens.com/product/emstat4m/) by combining hardware design with software integration. This innovation enhances experimental efficiency and scalability for researchers and engineers alike at a very low price, paving the way for applications such as multiplexed electrochemical sensing, automated assay platforms, and integrated IoT-based field monitoring systems for environmental, biomedical, or industrial electrochemical analysis.
 
 ---
 
