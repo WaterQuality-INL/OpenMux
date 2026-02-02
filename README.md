@@ -146,4 +146,5 @@ This work is an extension of the research project funded by EEA (European Econom
 
 ## References
 [1] Renato L. Gil, Samuel Silva, Marília B. Santos, Álvaro Geraldes, Begoña Espiña, Raquel B. Queirós. Multiplexed potentiometric sensing of nitrite in environmental waters. Analytica Chimica Acta 2026, https://doi.org/10.1016/j.aca.2026.345190
+
 [2] Olesia Dudik, Renato L. Gil, Raquel B. Queirós. Critical assessment of different ion-to-electron transducers in modified screen-printed electrodes for potentiometric lithium sensing. Microchemical Journal 2025, 215, 114195, https://doi.org/10.1016/j.microc.2025.114195
